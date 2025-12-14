@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# NFT Gallery (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Overview
 
-## Available Scripts
+NFT Gallery is a frontend web application developed using React. The project displays a collection of NFT cards with images, artist names, and prices. Users can filter NFTs by artist, sort them by price, and view detailed information for each NFT using client-side routing.
 
-In the project directory, you can run:
+This project is designed as a beginner-to-intermediate level React application and is suitable for academic submissions, practice projects, and portfolio demonstration.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* Display NFTs in a responsive card-based grid
+* Local image assets for NFTs
+* Filter NFTs by artist name
+* Sort NFTs by price
+* Dedicated NFT details page
+* Smooth hover animations using Framer Motion
+* Clean and modular component structure
+* Client-side routing with React Router
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+* React JS
+* React Router DOM
+* Framer Motion
+* JavaScript (ES6)
+* CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Folder Structure
+NFT-GALLERY/
+│
+├── node_modules/
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │   ├── nft1.jpg
+│   │   ├── nft2.jpg
+│   │   ├── nft3.jpg
+│   │   ├── nft4.jpg
+│   │   └── nft5.jpg
+│   │
+│   ├── components/
+│   │   ├── FilterSort/
+│   │   │   ├── FilterSort.js
+│   │   │   └── FilterSort.css
+│   │   │
+│   │   └── NFTCard/
+│   │       ├── NFTCard.js
+│   │       └── NFTCard.css
+│   │
+│   ├── data/
+│   │   └── nftData.js
+│   │
+│   ├── pages/
+│   │   ├── Gallery.js
+│   │   ├── Gallery.css
+│   │   └── NFTDetails.js
+│   │
+│   ├── App.js
+│   ├── App.css
+│   └── index.js
+│
+├── .gitignore
+├── package.json
+├── package-lock.json
+└── README.md
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation and Setup
 
-### `npm run eject`
+Follow the steps below to run the project locally:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository or download the source code.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Open the project folder in Visual Studio Code.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Open the terminal in the project root directory and install dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Install required extra libraries:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm install framer-motion ethers
 
-### Code Splitting
+5. Start the development server:
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+6. Open your browser and navigate to:
+http://localhost:3000
 
-### Analyzing the Bundle Size
+## Application Flow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+* The Gallery page displays all NFTs in a grid layout.
+* Filter and sort options allow users to organize NFTs dynamically.
+* Clicking on an NFT opens a detailed view page.
+* Hovering over NFT cards triggers smooth animation effects.
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Notes and Limitations
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* This project is a frontend-only demo.
+* No real blockchain transactions are performed.
+* NFT data is stored locally in JavaScript files.
+* MetaMask integration is not implemented in this version.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Future Enhancements
 
-### `npm run build` fails to minify
+* Backend integration using an API or JSON server
+* Wallet connection and ownership simulation
+* Real blockchain minting and buying functionality
+* Search bar and pagination
+* Light and dark theme toggle
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+Developed by Zunair
+
